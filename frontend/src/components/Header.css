@@ -1,0 +1,90 @@
+/* NTCS Header - Matches design */
+
+.ntcs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  padding-right: 10px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  margin-top: 15px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  background: transparent;
+}
+
+.nav-btn {
+  padding: 10px 28px;
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-base);
+}
+
+.nav-btn.active:hover {
+  background: var(--text-secondary);
+}

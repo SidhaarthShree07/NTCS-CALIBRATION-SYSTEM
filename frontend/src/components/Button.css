@@ -1,0 +1,91 @@
+.ntcs-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  position: relative;
+}
+
+.ntcs-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.ntcs-button-primary {
+  background: #2D2D2D;
+  color: white;
+}
+
+.ntcs-button-primary:hover:not(:disabled) {
+  background: #1A1A1A;
+}
+
+.ntcs-button-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(12px);
+}
+
+.ntcs-button-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ntcs-button-ghost {
+  background: transparent;
+  color: #9CA3AF;
+  border: 1px solid transparent;
+}
+
+.ntcs-button-ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+/* Sizes */
+.ntcs-button-sm {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.ntcs-button-md {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.ntcs-button-lg {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

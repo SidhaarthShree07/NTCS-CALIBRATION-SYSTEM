@@ -1,0 +1,126 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+
+# Model files (large)
+*.pt
+*.pth
+*.pth.tar
+*.onnx
+*.weights
+*.h5
+
+# Temp files
+temp/
+src/temp/
+*.tmp
+*.cache
+
+# Generated calibration outputs
+calib/
+src/calib/
+
+# Frontend (external repo - linked as submodule)
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+# Vercel
+vercel.json
+frontend/vercel.json
+
+# PowerPoint/PDF
+*.pdf
+*.pptx
+
+# Batch scripts
+*.bat
+
+# Cache
+cache_metadata.json
+
+# Test/coverage/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Proof directory
+src/temp/proof/
+
+# Local media/scripts not for commit
+src/model_frame_ss.jpg
+src/model_frame_ss.jpeg
+src/vehicle_calib_frame.jpg
+src/deploy-azure.ps1
+src/set-azure-env.ps1
+
+# Internal docs and notes not for repo
+AZURE_SETUP_GUIDE.md
+src/AZURE_BLOB_STORAGE_SETUP.md
+src/DEPLOYMENT_STEPS.md
+src/DEPLOYMENT_SUMMARY.md
+APPLICATION_OVERVIEW.md
+ML_PRESENTATION.md
+TIMEOUT_FIX_SUMMARY.md
+VIDEO_SCRIPT_INFO.txt
+VIOLATION_RECORDER_CHANGES.md
+fix_prompt.py

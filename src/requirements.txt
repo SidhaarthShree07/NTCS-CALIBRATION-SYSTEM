@@ -1,0 +1,35 @@
+# Deep Learning & Computer Vision
+torch==2.9.1+cpu
+torchvision==0.24.1+cpu
+ultralytics==8.3.228
+opencv-contrib-python==4.12.0.88
+
+# Tracking & Detection
+deep-sort-realtime==1.3.2
+supervision==0.26.1
+
+# Scientific Computing
+numpy==2.2.6
+scipy==1.16.3
+scikit-learn==1.7.2
+scikit-image==0.25.2
+
+# Web Framework
+flask==3.1.2
+flask-cors==6.0.1
+
+# AI & Language Models
+google-generativeai==0.8.5
+langchain==0.3.27
+langchain-google-genai==2.0.10
+langchain-core==0.3.79
+
+# Cloud Storage
+azure-storage-blob==12.27.1
+
+# Utilities
+pyyaml==6.0.3
+Pillow==11.3.0
+matplotlib==3.10.7
+requests==2.32.5
+python-dotenv==1.2.1

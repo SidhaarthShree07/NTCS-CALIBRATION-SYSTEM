@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  ntcs-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ntcs-traffic-backend
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./temp:/app/temp
+      - ./models:/app/models
+      - ./calib:/app/calib
+    environment:
+      - BACKEND_API_BASE=https://nextgen-fv1h.onrender.com/api
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
+      - AZURE_CONTAINER_NAME=${AZURE_CONTAINER_NAME}
+      - HMAC_SECRET=${HMAC_SECRET}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/api/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

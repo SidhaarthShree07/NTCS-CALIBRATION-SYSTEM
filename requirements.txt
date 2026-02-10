@@ -1,0 +1,44 @@
+# Deep Learning & Computer Vision
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics
+# Use headless contrib build in container/CI environments
+opencv-contrib-python-headless>=4.8.0
+ffmpeg-python>=0.2.0
+
+# Tracking & Detection
+deep-sort-realtime
+supervision
+
+# Scientific Computing
+numpy
+scipy
+sympy==1.13.1
+scikit-learn
+scikit-image
+
+# Web Framework
+flask
+flask-cors
+
+# AI & Language Models
+google-generativeai
+langchain
+langchain-google-genai
+langchain-core
+
+# Cloud Storage
+azure-storage-blob>=12.19.0
+
+# ONNX Runtime (GPU)
+onnxruntime-gpu
+
+# Utilities
+pyyaml
+Pillow
+matplotlib
+requests
+python-dotenv
+
+
+

@@ -1,0 +1,127 @@
+/* NTCS Locations Page */
+
+.locations-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.locations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.locations-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.locations-header p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.locations-error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.locations-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.locations-empty {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 24px;
+}
+
+.locations-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.locations-table thead th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.locations-table tbody td {
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.locations-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.actions-col {
+  width: 220px;
+}
+
+.actions-col .btn {
+  margin-right: 8px;
+}
+
+.btn.danger {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.btn.danger:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+
+@media (max-width: 768px) {
+  .locations-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions-col {
+    width: auto;
+  }
+
+  .locations-table thead {
+    display: none;
+  }
+
+  .locations-table,
+  .locations-table tbody,
+  .locations-table tr,
+  .locations-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .locations-table tr {
+    border-bottom: 1px solid var(--glass-border);
+    padding: 8px 0;
+  }
+
+  .locations-table tbody td {
+    border-bottom: none;
+    padding: 6px 8px;
+  }
+}

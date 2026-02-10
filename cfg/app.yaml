@@ -1,0 +1,5 @@
+video_path: D:/Traffic/vehicles.mp4
+vehicle_model_path: models/yolov8n.pt
+calib_distance_m: 10.0
+line_A_y: 300
+line_B_y: 500
