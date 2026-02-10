@@ -90,8 +90,8 @@ az containerapp create \
   --cpu 2.0 \
   --memory 4.0Gi \
   --env-vars \
-    BACKEND_API_BASE=https://nextgen-fv1h.onrender.com/api \
-    GEMINI_API_KEY=AIzaSyAIGqCtttrWdhgDjFd0Ro-H585gJGRLCtI
+    BACKEND_API_BASE=[YOUR BACKEND] \
+    GEMINI_API_KEY=[YOUR KEY]
 ```
 
 ## Step 8: Get Application URL
